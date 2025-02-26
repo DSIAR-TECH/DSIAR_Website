@@ -332,6 +332,85 @@ def ml_course():
     
     """)
 
+@app.route('/courses/deep-learning')
+def dl_course():
+    return html_template.format(title="Deep Learning", bg_color="#C6E0B4", content="""
+    <p><b>Module 1: Introduction to Deep Learning</b></p>
+    <ul>
+        <li>What is Deep Learning?</li>
+        <li>Key Concepts: Neurons, Activation Functions, Layers</li>
+        <li>Difference Between Machine Learning and Deep Learning</li>
+        <li>Applications of Deep Learning in Real World</li>
+    </ul>
+    <p><b>Module 2: Mathematics for Deep Learning</b></p>
+    <ul>
+        <li>Linear Algebra Basics: Vectors, Matrices, Tensors</li>
+        <li>Calculus Basics: Derivatives, Chain Rule</li>
+        <li>Probability and Statistics for DL</li>
+        <li>Gradient Descent and Optimization Algorithms</li>
+    </ul>
+    <p><b>Module 3: Neural Networks Basics</b></p>
+    <ul>
+        <li>Introduction to Artificial Neural Networks (ANN)</li>
+        <li>Structure of Neural Networks: Layers, Weights, Biases</li>
+        <li>Forward Propagation and Backpropagation</li>
+        <li>Types of Activation Functions: Sigmoid, ReLU, Tanh, Softmax</li>
+    </ul>
+    <p><b>Module 4: Deep Learning Frameworks</b></p>
+    <ul>
+        <li>Introduction to TensorFlow</li>
+        <li>Introduction to PyTorch</li>
+        <li>Building and Training a Neural Network in TensorFlow</li>
+        <li>Building and Training a Neural Network in PyTorch</li>
+    </ul>
+    <p><b>Module 5: Convolutional Neural Networks (CNNs)</b></p>
+    <ul>
+        <li>Introduction to CNNs</li>
+        <li>Convolution Operations</li>
+        <li>Pooling Layers: Max Pooling, Average Pooling</li>
+        <li>Architectures of CNNs: VGG, ResNet, Inception</li>
+        <li>Transfer Learning with Pre-Trained Models</li>
+    </ul>
+    <p><b>Module 6: Recurrent Neural Networks (RNNs)</b></p>
+    <ul>
+        <li>Introduction to RNNs</li>
+        <li>Sequence Data and Time-Series Analysis</li>
+        <li>Variants of RNN: LSTM, GRU</li>
+        <li>Applications of RNNs: Text Generation, Sentiment Analysis</li>
+    </ul>
+    <p><b>Module 7: Generative Models</b></p>
+    <ul>
+        <li>Introduction to Generative Models</li>
+        <li>Autoencoders</li>
+        <li>Variational Autoencoders (VAEs)</li>
+        <li>Generative Adversarial Networks (GANs)</li>
+        <li>Applications of GANs: Image Synthesis, Style Transfer</li>
+    </ul>
+    <p><b>Module 8: Natural Language Processing (NLP) with Deep Learning</b></p>
+    <ul>
+        <li>Word Embeddings: Word2Vec, GloVe</li>
+        <li>Text Preprocessing for Deep Learning</li>
+        <li>Sequence-to-Sequence Models</li>
+        <li>Transformers and Attention Mechanisms</li>
+        <li>Applications: Machine Translation, Chatbots</li>
+    </ul>
+    <p><b>Module 9: Advanced Topics in Deep Learning</b></p>
+    <ul>
+        <li>Hyperparameter Tuning and Regularization Techniques</li>
+        <li>Optimization Algorithms: Adam, RMSprop, SGD</li>
+        <li>Explainable Deep Learning: Grad-CAM, SHAP</li>
+        <li>Handling Imbalanced Data in Deep Learning</li>
+        <li>Deployment of Deep Learning Models</li>
+    </ul>
+    <p><b>Module 10: Capstone Project and Revision</b></p>
+    <ul>
+        <li>Capstone Project: End-to-End Deep Learning Application (e.g., Image Classification, Text Generation)</li>
+        <li>Review of Key Concepts</li>
+        <li>Final Assessment: Project Presentation</li>
+    </ul>
+    
+    """)
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
