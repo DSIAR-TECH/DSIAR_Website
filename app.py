@@ -250,6 +250,85 @@ def ai_course():
         <li>Revision and Q&A</li>
         <li>Final Assessment</li>
     </ul>
+
+    """)
+    
+@app.route('/courses/ml')
+def ml_course():
+    return html_template.format(title="Machine Learning", bg_color="#C6E0B4", content="""
+    <p><b>Module 1: Introduction to Machine Learning</b></p>
+    <ul>
+        <li>What is Machine Learning?</li>
+        <li>Types of Machine Learning: Supervised, Unsupervised, Semi-Supervised, Reinforcement</li>
+        <li>Real-World Applications of Machine Learning</li>
+        <li>Steps in the ML Workflow</li>
+        <li>Introduction to Python Libraries for ML</li>
+    </ul>
+    <p><b>Module 2: Data Preprocessing</b></p>
+    <ul>
+        <li>Understanding Data and Features</li>
+        <li>Handling Missing Data</li>
+        <li>Data Transformation: Normalization, Standardization, One-Hot Encoding</li>
+        <li>Feature Engineering and Selection</li>
+        <li>Data Splitting: Train-Test Split, Cross-Validation</li>
+    </ul>
+    <p><b>Module 3: Supervised Learning – Regression</b></p>
+    <ul>
+        <li>Linear Regression: Simple and Multiple Linear Regression</li>
+        <li>Polynomial Regression</li>
+        <li>Regularization Techniques: Ridge Regression, Lasso Regression</li>
+        <li>Evaluation Metrics: MAE, MSE, R² Score</li>
+    </ul>
+    <p><b>Module 4: Supervised Learning – Classification</b></p>
+    <ul>
+        <li>Logistic Regression</li>
+        <li>Decision Trees for Classification</li>
+        <li>Random Forest Classifier</li>
+        <li>Support Vector Machines (SVM)</li>
+        <li>Naive Bayes Classifier</li>
+        <li>Evaluation Metrics: Confusion Matrix, Precision, Recall, F1-Score, ROC-AUC</li>
+    </ul>
+    <p><b>Module 5: Unsupervised Learning – Clustering</b></p>
+    <ul>
+        <li>Introduction to Clustering</li>
+        <li>K-Means Clustering</li>
+        <li>Hierarchical Clustering</li>
+        <li>DBSCAN (Density-Based Spatial Clustering)</li>
+        <li>Evaluation Metrics: Silhouette Score, Davies-Bouldin Index</li>
+    </ul>
+    <p><b>Module 6: Dimensionality Reduction</b></p>
+    <ul>
+        <li>Introduction to Dimensionality Reduction</li>
+        <li>Principal Component Analysis (PCA)</li>
+        <li>Singular Value Decomposition (SVD)</li>
+        <li>t-Distributed Stochastic Neighbor Embedding (t-SNE)</li>
+    </ul>
+    <p><b>Module 7: Ensemble Learning</b></p>
+    <ul>
+        <li>Introduction to Ensemble Methods</li>
+        <li>Bagging Techniques: Random Forest</li>
+        <li>Boosting Techniques: AdaBoost, Gradient Boosting, XGBoost</li>
+        <li>Stacking Models</li>
+    </ul>
+    <p><b>Module 8: Advanced Topics in Machine Learning</b></p>
+    <ul>
+        <li>Handling Imbalanced Data: SMOTE, Weighted Loss Functions</li>
+        <li>Time Series Analysis: ARIMA, SARIMA</li>
+        <li>Recommendation Systems: Collaborative Filtering, Content-Based Filtering</li>
+        <li>Model Deployment: Saving Models with Pickle and Joblib</li>
+    </ul>
+    <p><b>Module 9: Explainability and Ethics in Machine Learning</b></p>
+    <ul>
+        <li>Explainable AI: SHAP, LIME</li>
+        <li>Ethical Considerations in Machine Learning: Bias, Privacy, Fairness</li>
+        <li>Guidelines and Regulations: GDPR, Ethical AI Standards</li>
+    </ul>
+    <p><b>Module 10: Capstone Project and Revision</b></p>
+    <ul>
+        <li>End-to-End ML Project (e.g., Predicting Loan Default, Fraud Detection)</li>
+        <li>Revision of Key Concepts and QnA</li>
+        <li>Final Assessment: Hands-On Coding Challenge</li>
+    </ul>
     
     """)
 
