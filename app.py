@@ -108,29 +108,28 @@ def contact():
 @app.route('/courses/python')
 def python_course():
     return html_template.format(title="Python Programming", bg_color="#C6E0B4", content="""
-    <h2>Python Programming</h2>
-    <p>Module 1: Introduction to Python and Setup</p>
+    <p><b>Module 1: Introduction to Python and Setup</b></p>
     <ul>
         <li>Introduction to Python: Relevance and Applications</li>
         <li>Setting up Python Environment</li>
         <li>Writing and Executing Python Scripts</li>
         <li>Python Syntax, Comments, and Indentation</li>
     </ul>
-    <p>Module 2: Python Basics</p>
+    <p><b>Module 2: Python Basics</b></p>
     <ul>
         <li>Variables and Data Types</li>
         <li>Input and Output Operations</li>
         <li>Operators: Arithmetic, Assignment, Comparison, Logical, Bitwise</li>
         <li>Basic Control Flow Statements</li>
     </ul>
-    <p>Module 3: Data Structures</p>
+    <p><b>Module 3: Data Structures</b></p>
     <ul>
         <li>Lists: Creation, Indexing, Slicing, and Modifying</li>
         <li>Tuples: Properties and Use Cases</li>
         <li>Sets: Union, Intersection, and Difference</li>
         <li>Dictionaries: Key-Value Pairs and Operations</li>
     </ul>
-    <p>Module 4: Functions and Modules</p>
+    <p><b>Module 4: Functions and Modules</b></p>
     <ul>
         <li>Defining and Calling Functions</li>
         <li>Parameters, Return Values, and Arguments</li>
@@ -138,38 +137,38 @@ def python_course():
         <li>Python Modules and Packages</li>
         <li>Creating Custom Modules</li>
     </ul>
-    <p>Module 5: File Handling</p>
+    <p><b>Module 5: File Handling</b></p>
     <ul>
         <li>File Operations: Reading, Writing, and Appending</li>
         <li>File Modes</li>
         <li>Exception Handling</li>
     </ul>
-    <p>Module 6: Object-Oriented Programming (OOP)</p>
+    <p><b>Module 6: Object-Oriented Programming (OOP)</b></p>
     <ul>
         <li>Classes and Objects</li>
         <li>__init__ Constructor</li>
         <li>Inheritance and Polymorphism</li>
         <li>Encapsulation and Abstraction</li>
     </ul>
-    <p>Module 7: Python Libraries and Advanced Topics</p>
+    <p><b>Module 7: Python Libraries and Advanced Topics</b></p>
     <ul>
         <li>Libraries: numpy, pandas, matplotlib</li>
         <li>Regular Expressions</li>
         <li>Iterators and Generators</li>
         <li>Decorators</li>
     </ul>
-    <p>Module 8: Working with APIs and Web Scraping</p>
+    <p><b>Module 8: Working with APIs and Web Scraping</b></p>
     <ul>
         <li>APIs: REST APIs and HTTP Requests</li>
         <li>Web Scraping: BeautifulSoup and selenium</li>
     </ul>
-    <p>Module 9: Introduction to Data Science with Python</p>
+    <p><b>Module 9: Introduction to Data Science with Python</b></p>
     <ul>
         <li>Data Analysis with pandas</li>
         <li>Data Visualization with matplotlib and seaborn</li>
         <li>Basic Machine Learning with scikit-learn</li>
     </ul>
-    <p>Module 10: Capstone Project and Revision</p>
+    <p><b>Module 10: Capstone Project and Revision</b></p>
     <ul>
         <li>Capstone Project</li>
         <li>Debugging and Error Handling</li>
