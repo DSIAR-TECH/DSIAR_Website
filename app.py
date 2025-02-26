@@ -411,6 +411,168 @@ def dl_course():
     
     """)
 
+@app.route('/courses/gen-ai')
+def gen_ai_course():
+    return html_template.format(title="Generative AI (Gen AI)", bg_color="#F4CCCC", content="""
+    <p><b>Module 1: Introduction to Generative AI</b></p>
+    <ul>
+        <li>Overview of Generative AI</li>
+        <li>Types of Generative Models</li>
+        <li>Ethical Considerations in Generative AI</li>
+    </ul>
+    <p><b>Module 2: Mathematics and Foundations for Generative AI</b></p>
+    <ul>
+        <li>Linear Algebra</li>
+        <li>Probability and Statistics</li>
+        <li>Optimization Techniques</li>
+        <li>KL Divergence and Information Theory</li>
+    </ul>
+    <p><b>Module 3: Neural Network Foundations</b></p>
+    <ul>
+        <li>Basic Concepts of Neural Networks</li>
+        <li>Training and Regularization</li>
+        <li>Loss Functions in Deep Learning</li>
+    </ul>
+    <p><b>Module 4: Variational Autoencoders (VAEs)</b></p>
+    <ul>
+        <li>Introduction to VAEs</li>
+        <li>Mathematics Behind VAEs</li>
+        <li>Applications of VAEs</li>
+    </ul>
+    <p><b>Module 5: Generative Adversarial Networks (GANs)</b></p>
+    <ul>
+        <li>Introduction to GANs</li>
+        <li>Types of GANs</li>
+        <li>Applications of GANs</li>
+        <li>Advanced GAN Topics</li>
+    </ul>
+    <p><b>Module 6: Transformers and Large Language Models (LLMs)</b></p>
+    <ul>
+        <li>Introduction to Transformer Models</li>
+        <li>Pretraining and Fine-Tuning</li>
+        <li>Transformers in NLP</li>
+        <li>Scaling Up: GPT Models</li>
+    </ul>
+    <p><b>Module 7: Diffusion Models</b></p>
+    <ul>
+        <li>Introduction to Diffusion Models</li>
+        <li>Mathematics Behind Diffusion Models</li>
+        <li>Applications of Diffusion Models</li>
+    </ul>
+    <p><b>Module 8: Retrieval-Augmented Generation (RAG)</b></p>
+    <ul>
+        <li>Introduction to RAG</li>
+        <li>Building a RAG System</li>
+        <li>Fine-Tuning RAG Models</li>
+        <li>Optimizing and Scaling RAG Systems</li>
+    </ul>
+    <p><b>Module 9: Multi-Modal Generative AI</b></p>
+    <ul>
+        <li>Introduction to Multi-Modal AI</li>
+        <li>Training Multi-Modal Models</li>
+        <li>Applications of Multi-Modal AI</li>
+    </ul>
+    <p><b>Module 10: Fine-Tuning, Deployment, and Ethics</b></p>
+    <ul>
+        <li>Fine-Tuning Pretrained Generative Models</li>
+        <li>Deployment of Generative AI Models</li>
+        <li>Ethical Considerations</li>
+    </ul>
+    <p><b>Module 11: Capstone Project and Review</b></p>
+    <ul>
+        <li>Capstone Project: End-to-End Generative AI Solution</li>
+        <li>Project Presentation and Discussion</li>
+        <li>Revision and Recap of Key Concepts</li>
+    </ul>
+    """)
+
+@app.route('/courses/data-science')
+def data_science_course():
+    return html_template.format(title="Data Science", bg_color="#A9D08E", content="""
+    <p><b>Module 1: Introduction to Data Science</b></p>
+    <ul>
+        <li>What is Data Science?</li>
+        <li>Data Science Workflow</li>
+        <li>Applications of Data Science</li>
+        <li>Roles and Responsibilities of a Data Scientist</li>
+    </ul>
+    <p><b>Module 2: Data Science Foundations</b></p>
+    <ul>
+        <li>Descriptive Statistics: Mean, Median, Mode, Variance, Standard Deviation</li>
+        <li>Inferential Statistics: Hypothesis Testing, Confidence Intervals</li>
+        <li>Probability Distributions: Normal, Binomial, Poisson</li>
+        <li>Linear Algebra: Matrices, Vectors, Eigenvalues</li>
+        <li>Calculus for Optimization: Gradients and Derivatives</li>
+    </ul>
+    <p><b>Module 3: Python for Data Science</b></p>
+    <ul>
+        <li>Python Basics: Data Types, Control Structures, Functions</li>
+        <li>Python Libraries: NumPy, Pandas, Matplotlib, Seaborn</li>
+        <li>Data Manipulation with Pandas</li>
+        <li>Data Visualization Techniques</li>
+        <li>Hands-On Data Analysis</li>
+    </ul>
+    <p><b>Module 4: Data Wrangling and Preprocessing</b></p>
+    <ul>
+        <li>Handling Missing Data</li>
+        <li>Data Cleaning Techniques</li>
+        <li>Feature Engineering and Feature Scaling</li>
+        <li>Encoding Categorical Variables</li>
+        <li>Outlier Detection and Treatment</li>
+    </ul>
+    <p><b>Module 5: Exploratory Data Analysis (EDA)</b></p>
+    <ul>
+        <li>Understanding Data Distributions</li>
+        <li>Correlation Analysis</li>
+        <li>Univariate, Bivariate, and Multivariate Analysis</li>
+        <li>Advanced Visualization Techniques</li>
+        <li>Hands-On EDA Project</li>
+    </ul>
+    <p><b>Module 6: Machine Learning Basics</b></p>
+    <ul>
+        <li>Supervised Learning: Classification and Regression</li>
+        <li>Algorithms: Linear Regression, Logistic Regression, Decision Trees</li>
+        <li>Unsupervised Learning: Clustering and Dimensionality Reduction</li>
+        <li>Algorithms: K-Means, DBSCAN, PCA</li>
+        <li>Model Evaluation Metrics</li>
+    </ul>
+    <p><b>Module 7: Advanced Machine Learning</b></p>
+    <ul>
+        <li>Ensemble Techniques: Random Forest, Gradient Boosting, XGBoost</li>
+        <li>Hyperparameter Tuning: Grid Search, Random Search</li>
+        <li>Cross-Validation Techniques</li>
+        <li>Model Deployment Basics</li>
+    </ul>
+    <p><b>Module 8: Introduction to Big Data and SQL</b></p>
+    <ul>
+        <li>Overview of Big Data Technologies: Hadoop, Spark</li>
+        <li>SQL for Data Analysis</li>
+        <li>Writing Queries, Joins, Grouping, Aggregations</li>
+        <li>Integrating SQL with Python</li>
+    </ul>
+    <p><b>Module 9: Introduction to Deep Learning</b></p>
+    <ul>
+        <li>Basics of Neural Networks</li>
+        <li>Introduction to TensorFlow and Keras</li>
+        <li>Building a Simple Neural Network</li>
+        <li>Hands-On Project: Image Classification or Text Analysis</li>
+    </ul>
+    <p><b>Module 10: Data Science Project and Deployment</b></p>
+    <ul>
+        <li>End-to-End Data Science Project Workflow</li>
+        <li>Insights and Reporting</li>
+        <li>Deploying Models Using Flask or FastAPI</li>
+    </ul>
+    <p><b>Module 11: Capstone Project and Review</b></p>
+    <ul>
+        <li>Real-World Data Science Capstone Project</li>
+        <li>Dataset Exploration</li>
+        <li>EDA and Feature Engineering</li>
+        <li>Model Building and Optimization</li>
+        <li>Insights and Presentation</li>
+    </ul>
+    """)
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
