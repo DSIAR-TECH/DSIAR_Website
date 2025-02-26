@@ -1262,7 +1262,7 @@ def blockchain_course():
         <li>Developing a Blockchain-Based Solution</li>
         <li>Project Presentation and Feedback</li>
     </ul>
-    ")
+    """)
 
 @app.route('/courses/c-programming')
 def c_programming_course():
@@ -1334,7 +1334,7 @@ def c_programming_course():
         <li>Developing a C-Based Application</li>
         <li>Project Presentation and Code Review</li>
     </ul>
-    ")
+    """)
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
