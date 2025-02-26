@@ -573,6 +573,768 @@ def data_science_course():
     </ul>
     """)
 
+@app.route('/courses/ai-ml-math')
+def ai_ml_math_course():
+    return html_template.format(title="AI/ML Mathematics", bg_color="#D6EAF8", content="""
+    <p><b>Module 1: Introduction to AI/ML Mathematics</b></p>
+    <ul>
+        <li>Importance of Mathematics in AI/ML</li>
+        <li>Overview of Key Mathematical Concepts for AI/ML</li>
+        <li>Mathematical Tools Used in Machine Learning</li>
+    </ul>
+    <p><b>Module 2: Linear Algebra</b></p>
+    <ul>
+        <li>Vectors and Matrices</li>
+        <li>Matrix Operations: Addition, Multiplication, Inversion</li>
+        <li>Eigenvalues and Eigenvectors</li>
+        <li>Singular Value Decomposition (SVD)</li>
+        <li>Systems of Linear Equations</li>
+        <li>Applications of Linear Algebra in Machine Learning</li>
+    </ul>
+    <p><b>Module 3: Calculus for AI/ML</b></p>
+    <ul>
+        <li>Limits and Continuity</li>
+        <li>Derivatives and Differentiation</li>
+        <li>Partial Derivatives</li>
+        <li>Gradient Descent and Optimization</li>
+        <li>Chain Rule and Backpropagation in Neural Networks</li>
+        <li>Higher-Order Derivatives and Optimization</li>
+    </ul>
+    <p><b>Module 4: Probability and Statistics</b></p>
+    <ul>
+        <li>Probability Theory Basics</li>
+        <li>Random Variables and Probability Distributions</li>
+        <li>Expectation and Variance</li>
+        <li>Hypothesis Testing and p-values</li>
+        <li>Statistical Inference and Confidence Intervals</li>
+        <li>Central Limit Theorem and Sampling</li>
+    </ul>
+    <p><b>Module 5: Optimization Techniques</b></p>
+    <ul>
+        <li>Convex Optimization</li>
+        <li>Gradient Descent and Variants (Stochastic, Mini-batch)</li>
+        <li>Learning Rate and Convergence</li>
+        <li>Newton’s Method</li>
+        <li>Constrained Optimization</li>
+        <li>Optimizing Cost Functions for Machine Learning</li>
+    </ul>
+    <p><b>Module 6: Information Theory for AI/ML</b></p>
+    <ul>
+        <li>Entropy and Information Gain</li>
+        <li>Kullback-Leibler (KL) Divergence</li>
+        <li>Cross-Entropy Loss Function</li>
+        <li>Mutual Information and its Role in Machine Learning</li>
+    </ul>
+    <p><b>Module 7: Numerical Methods and Computation</b></p>
+    <ul>
+        <li>Numerical Stability and Precision</li>
+        <li>Numerical Integration and Differentiation</li>
+        <li>Solving Linear and Nonlinear Equations</li>
+        <li>Iterative Methods for Large-Scale Problems</li>
+    </ul>
+    <p><b>Module 8: Graph Theory and Networks</b></p>
+    <ul>
+        <li>Graphs and Their Representation</li>
+        <li>Graph Traversal: BFS, DFS</li>
+        <li>Weighted Graphs and Shortest Path Algorithms</li>
+        <li>Graph Neural Networks (GNNs)</li>
+    </ul>
+    <p><b>Module 9: Matrix Factorization and Decomposition</b></p>
+    <ul>
+        <li>Principal Component Analysis (PCA)</li>
+        <li>Non-Negative Matrix Factorization (NMF)</li>
+        <li>LU, QR, and Cholesky Decompositions</li>
+        <li>Applications of Matrix Decompositions in Machine Learning</li>
+    </ul>
+    <p><b>Module 10: Advanced Topics in AI/ML Math</b></p>
+    <ul>
+        <li>Tensor Calculus for Deep Learning</li>
+        <li>Advanced Optimization Algorithms (Adam, Adagrad, RMSProp)</li>
+        <li>Deep Learning Theory: Universal Approximation Theorem</li>
+        <li>Understanding Neural Network Complexity and Overfitting</li>
+    </ul>
+    <p><b>Module 11: Capstone Project and Review</b></p>
+    <ul>
+        <li>AI/ML Mathematics Capstone Project</li>
+        <li>Application of Mathematical Concepts to Real-World ML Models</li>
+        <li>Final Review and Q&A</li>
+    </ul>""")
+
+@app.route('/courses/cybersecurity')
+def cybersecurity_course():
+    return html_template.format(title="Cybersecurity", bg_color="#F4CCCC", content="""
+    <p><b>Module 1: Introduction to Cybersecurity</b></p>
+    <ul>
+        <li>Importance of Cybersecurity</li>
+        <li>Cybersecurity Landscape and Threats</li>
+        <li>Key Concepts: Confidentiality, Integrity, Availability (CIA)</li>
+        <li>Cybersecurity Domains and Career Paths</li>
+    </ul>
+    <p><b>Module 2: Networking Fundamentals</b></p>
+    <ul>
+        <li>Basics of Networking: Protocols, OSI Model, TCP/IP</li>
+        <li>IP Addressing and Subnetting</li>
+        <li>DNS, DHCP, and NAT</li>
+        <li>Network Devices and Topologies</li>
+        <li>Introduction to Firewalls and VPNs</li>
+    </ul>
+    <p><b>Module 3: Cyber Threats and Vulnerabilities</b></p>
+    <ul>
+        <li>Types of Cyber Threats: Malware, Phishing, Ransomware</li>
+        <li>Social Engineering Attacks</li>
+        <li>Vulnerabilities and Exploits</li>
+        <li>Threat Intelligence and Incident Response</li>
+    </ul>
+    <p><b>Module 4: Security Architecture and Design</b></p>
+    <ul>
+        <li>Principles of Secure System Design</li>
+        <li>Security Controls: Preventive, Detective, Corrective</li>
+        <li>Access Control Models: DAC, MAC, RBAC</li>
+        <li>Secure Software Development Lifecycle (SSDLC)</li>
+        <li>Cryptography Basics: Encryption, Decryption, and Hashing</li>
+    </ul>
+    <p><b>Module 5: Cryptography and PKI</b></p>
+    <ul>
+        <li>Symmetric and Asymmetric Encryption</li>
+        <li>Public Key Infrastructure (PKI)</li>
+        <li>Digital Signatures and Certificates</li>
+        <li>SSL/TLS Protocols</li>
+        <li>Hashing Algorithms: MD5, SHA</li>
+    </ul>
+    <p><b>Module 6: Operating System and Application Security</b></p>
+    <ul>
+        <li>Secure Configuration of Operating Systems (Windows/Linux)</li>
+        <li>Patch Management and Updates</li>
+        <li>Secure Coding Practices</li>
+        <li>Web Application Security: OWASP Top 10</li>
+        <li>Database Security</li>
+    </ul>
+    <p><b>Module 7: Network Security</b></p>
+    <ul>
+        <li>Intrusion Detection and Prevention Systems (IDS/IPS)</li>
+        <li>Network Monitoring and Traffic Analysis</li>
+        <li>Securing Wireless Networks</li>
+        <li>Firewalls and VPN Configurations</li>
+        <li>Zero Trust Architecture</li>
+    </ul>
+    <p><b>Module 8: Ethical Hacking and Penetration Testing</b></p>
+    <ul>
+        <li>Ethical Hacking Overview and Rules of Engagement</li>
+        <li>Reconnaissance and Footprinting</li>
+        <li>Scanning and Enumeration</li>
+        <li>Exploitation and Post-Exploitation Techniques</li>
+        <li>Vulnerability Assessment Tools (e.g., Nmap, Nessus)</li>
+    </ul>
+    <p><b>Module 9: Security Operations and Incident Response</b></p>
+    <ul>
+        <li>Security Operations Center (SOC) Roles</li>
+        <li>Incident Detection and Response Process</li>
+        <li>Forensic Investigation Basics</li>
+        <li>Log Analysis and SIEM Tools (e.g., Splunk)</li>
+        <li>Threat Hunting Techniques</li>
+    </ul>
+    <p><b>Module 10: Cloud and IoT Security</b></p>
+    <ul>
+        <li>Cloud Security Fundamentals</li>
+        <li>Shared Responsibility Model</li>
+        <li>Securing AWS, Azure, and GCP Environments</li>
+        <li>IoT Security Challenges</li>
+        <li>Identity and Access Management (IAM) in the Cloud</li>
+    </ul>
+    <p><b>Module 11: Governance, Risk, and Compliance (GRC)</b></p>
+    <ul>
+        <li>Introduction to GRC Frameworks</li>
+        <li>Risk Assessment and Management</li>
+        <li>Security Policies and Standards (ISO 27001, NIST, GDPR)</li>
+        <li>Audit and Compliance Requirements</li>
+        <li>Business Continuity and Disaster Recovery</li>
+    </ul>
+    <p><b>Module 12: Cybersecurity Tools and Techniques</b></p>
+    <ul>
+        <li>Security Tools: Wireshark, Metasploit, Burp Suite</li>
+        <li>Scripting for Security Automation (Python/Bash)</li>
+        <li>Password Cracking and Mitigation</li>
+        <li>Malware Analysis Basics</li>
+        <li>Endpoint Detection and Response (EDR)</li>
+    </ul>
+    <p><b>Module 13: Emerging Trends in Cybersecurity</b></p>
+    <ul>
+        <li>Artificial Intelligence and Machine Learning in Security</li>
+        <li>Quantum Cryptography</li>
+        <li>Cybersecurity for Blockchain</li>
+        <li>Ransomware Trends and Defense Strategies</li>
+        <li>Security Challenges in 5G Networks</li>
+    </ul>
+    <p><b>Module 14: Capstone Project and Review</b></p>
+    <ul>
+        <li>Real-World Cybersecurity Project</li>
+        <li>Risk Assessment and Threat Modeling</li>
+        <li>Implementation of Security Controls</li>
+        <li>Incident Response Simulation</li>
+        <li>Presentation and Feedback</li>
+    </ul>
+    """)
+
+@app.route('/courses/quantum-computing')
+def quantum_computing_course():
+    return html_template.format(title="Quantum Computing", bg_color="#D9EAD3", content="""
+    <p><b>Module 1: Introduction to Quantum Computing</b></p>
+    <ul>
+        <li>History and Evolution of Quantum Computing</li>
+        <li>Classical vs. Quantum Computing</li>
+        <li>Key Concepts: Superposition, Entanglement, Interference</li>
+        <li>Applications of Quantum Computing</li>
+    </ul>
+    <p><b>Module 2: Mathematics for Quantum Computing</b></p>
+    <ul>
+        <li>Linear Algebra Essentials</li>
+        <li>Probability Theory Basics</li>
+        <li>Dirac Notation and Quantum States</li>
+        <li>Unitary Operators and Quantum Gates</li>
+    </ul>
+    <p><b>Module 3: Quantum Mechanics Fundamentals</b></p>
+    <ul>
+        <li>Postulates of Quantum Mechanics</li>
+        <li>The Schrödinger Equation</li>
+        <li>Quantum Measurement and Observables</li>
+        <li>Quantum State Collapse</li>
+    </ul>
+    <p><b>Module 4: Quantum Gates and Circuits</b></p>
+    <ul>
+        <li>Single-Qubit Gates: X, Y, Z, H, S, T</li>
+        <li>Multi-Qubit Gates: CNOT, SWAP, Toffoli</li>
+        <li>Quantum Circuit Design and Simulation</li>
+        <li>Quantum Algorithms and Circuit Optimization</li>
+    </ul>
+    <p><b>Module 5: Quantum Algorithms</b></p>
+    <ul>
+        <li>Deutsch-Jozsa Algorithm</li>
+        <li>Grover’s Search Algorithm</li>
+        <li>Shor’s Algorithm for Factoring</li>
+        <li>Quantum Phase Estimation</li>
+        <li>Quantum Fourier Transform (QFT)</li>
+    </ul>
+    <p><b>Module 6: Quantum Computing Hardware</b></p>
+    <ul>
+        <li>Quantum Bits (Qubits) and Physical Realizations</li>
+        <li>Quantum Computing Architectures (Superconducting, Trapped Ions, etc.)</li>
+        <li>Quantum Error Correction and Fault-Tolerant Computing</li>
+        <li>Noise and Decoherence in Quantum Systems</li>
+    </ul>
+    <p><b>Module 7: Quantum Machine Learning</b></p>
+    <ul>
+        <li>Quantum Data Encoding</li>
+        <li>Variational Quantum Circuits for ML</li>
+        <li>Quantum Neural Networks</li>
+        <li>Hybrid Quantum-Classical Machine Learning</li>
+    </ul>
+    <p><b>Module 8: Quantum Cryptography</b></p>
+    <ul>
+        <li>Quantum Key Distribution (QKD)</li>
+        <li>BB84 and E91 Protocols</li>
+        <li>Post-Quantum Cryptography</li>
+        <li>Implications for Modern Cryptographic Systems</li>
+    </ul>
+    <p><b>Module 9: Programming for Quantum Computing</b></p>
+    <ul>
+        <li>Introduction to Qiskit (IBM Quantum)</li>
+        <li>Creating Quantum Circuits in Python</li>
+        <li>Running Simulations on Quantum Devices</li>
+        <li>Exploring Other Quantum Frameworks (Cirq, PyQuil, PennyLane)</li>
+    </ul>
+    <p><b>Module 10: Advanced Quantum Topics</b></p>
+    <ul>
+        <li>Adiabatic Quantum Computing</li>
+        <li>Quantum Annealing (D-Wave Systems)</li>
+        <li>Topological Quantum Computing</li>
+        <li>Quantum Supremacy and Benchmarking</li>
+    </ul>
+    <p><b>Module 11: Applications of Quantum Computing</b></p>
+    <ul>
+        <li>Optimization Problems</li>
+        <li>Drug Discovery and Material Science</li>
+        <li>Quantum Finance</li>
+        <li>Cryptanalysis and Security</li>
+        <li>Quantum Internet</li>
+    </ul>
+    <p><b>Module 12: Challenges and Future Trends</b></p>
+    <ul>
+        <li>Scalability and Hardware Limitations</li>
+        <li>Quantum Computing in Industry</li>
+        <li>Ethical Implications of Quantum Technology</li>
+        <li>Emerging Trends: Quantum AI, Quantum Sensors</li>
+    </ul>
+    <p><b>Module 13: Capstone Project and Review</b></p>
+    <ul>
+        <li>Design and Implementation of a Quantum Algorithm</li>
+        <li>Simulation and Testing on Quantum Hardware</li>
+        <li>Analysis of Results and Optimization</li>
+        <li>Presentation and Feedback</li>
+    </ul>
+    """)
+
+@app.route('/courses/r-programming')
+def r_programming_course():
+    return html_template.format(title="R Programming", bg_color="#D9EAD3", content="""
+    <p><b>Module 1: Introduction to R Programming</b></p>
+    <ul>
+        <li>Introduction to R and RStudio</li>
+        <li>Setting Up the R Environment</li>
+        <li>Basics of R Syntax</li>
+        <li>Working with R Scripts</li>
+    </ul>
+    <p><b>Module 2: Data Types and Structures</b></p>
+    <ul>
+        <li>Scalars, Vectors, and Lists</li>
+        <li>Matrices and Arrays</li>
+        <li>Data Frames and Tibbles</li>
+        <li>Factors and Dates</li>
+    </ul>
+    <p><b>Module 3: Data Input and Output</b></p>
+    <ul>
+        <li>Reading Data: CSV, Excel, JSON, and Databases</li>
+        <li>Writing Data to Files</li>
+        <li>Web Scraping with R</li>
+        <li>Using APIs for Data Retrieval</li>
+    </ul>
+    <p><b>Module 4: Data Manipulation</b></p>
+    <ul>
+        <li>Introduction to the dplyr Package</li>
+        <li>Filtering, Selecting, and Mutating Data</li>
+        <li>Grouping and Summarizing Data</li>
+        <li>Data Merging and Joins</li>
+    </ul>
+    <p><b>Module 5: Data Visualization</b></p>
+    <ul>
+        <li>Introduction to the ggplot2 Package</li>
+        <li>Creating Basic Plots: Scatter, Bar, Line, and Histograms</li>
+        <li>Customizing Plots: Titles, Themes, and Annotations</li>
+        <li>Advanced Visualization: Facets, Geoms, and Interactive Plots</li>
+        <li>Visualization Tools: plotly, shiny, and leaflet</li>
+    </ul>
+    <p><b>Module 6: Statistical Analysis in R</b></p>
+    <ul>
+        <li>Descriptive Statistics</li>
+        <li>Hypothesis Testing: t-test, ANOVA, and Chi-Square Test</li>
+        <li>Correlation and Regression Analysis</li>
+        <li>Time Series Analysis</li>
+    </ul>
+    <p><b>Module 7: R for Machine Learning</b></p>
+    <ul>
+        <li>Data Preprocessing and Feature Engineering</li>
+        <li>Supervised Learning: Linear and Logistic Regression</li>
+        <li>Classification Models: Decision Trees, Random Forests</li>
+        <li>Unsupervised Learning: Clustering with K-Means, Hierarchical Clustering</li>
+        <li>Model Evaluation Metrics</li>
+    </ul>
+    <p><b>Module 8: Working with Strings and Dates</b></p>
+    <ul>
+        <li>String Manipulation using stringr</li>
+        <li>Regular Expressions in R</li>
+        <li>Working with Dates and Times using lubridate</li>
+    </ul>
+    <p><b>Module 9: R for Big Data and Databases</b></p>
+    <ul>
+        <li>Introduction to Big Data with data.table</li>
+        <li>Connecting R with SQL Databases</li>
+        <li>Handling Large Datasets in R</li>
+        <li>Integration with Hadoop and Spark</li>
+    </ul>
+    <p><b>Module 10: R for Advanced Analytics</b></p>
+    <ul>
+        <li>Text Mining with R</li>
+        <li>Sentiment Analysis</li>
+        <li>Network Analysis</li>
+        <li>Survival Analysis</li>
+    </ul>
+    <p><b>Module 11: R for Reporting and Automation</b></p>
+    <ul>
+        <li>Creating Reports with R Markdown</li>
+        <li>Automating Tasks with R Scripts</li>
+        <li>Building Dashboards with Shiny</li>
+        <li>Exporting Reports to PDF, HTML, and Word</li>
+    </ul>
+    <p><b>Module 12: R Packages and Ecosystem</b></p>
+    <ul>
+        <li>Installing and Managing Packages</li>
+        <li>Overview of Popular R Packages: tidyverse, caret, mlr</li>
+        <li>Writing Your Own R Packages</li>
+        <li>Contributing to the R Community</li>
+    </ul>
+    <p><b>Module 13: Advanced Topics in R</b></p>
+    <ul>
+        <li>Functional Programming in R</li>
+        <li>Object-Oriented Programming with R (S3, S4, R6)</li>
+        <li>Parallel Computing in R</li>
+        <li>Debugging and Performance Optimization</li>
+    </ul>
+    <p><b>Module 14: Capstone Project and Review</b></p>
+    <ul>
+        <li>End-to-End Data Analysis Project</li>
+        <li>Data Cleaning, Visualization, and Analysis</li>
+        <li>Machine Learning Model Development</li>
+        <li>Report Creation and Presentation</li>
+    </ul>
+    """)
+
+@app.route('/courses/bi')
+def business_intelligence_course():
+    return html_template.format(title="Business Intelligence (BI)", bg_color="#E0F7FA", content="""
+    <p><b>Module 1: Introduction to Business Intelligence (BI)</b></p>
+    <ul>
+        <li>Overview of Business Intelligence</li>
+        <li>Importance of BI in Decision-Making</li>
+        <li>Components of BI Systems</li>
+        <li>BI vs. Business Analytics</li>
+    </ul>
+    <p><b>Module 2: Data Warehousing Fundamentals</b></p>
+    <ul>
+        <li>Introduction to Data Warehousing</li>
+        <li>ETL Process: Extract, Transform, Load</li>
+        <li>Data Warehouse Architectures (Star and Snowflake Schemas)</li>
+        <li>Online Analytical Processing (OLAP)</li>
+    </ul>
+    <p><b>Module 3: Data Visualization and Reporting</b></p>
+    <ul>
+        <li>Importance of Data Visualization</li>
+        <li>Principles of Effective Dashboards</li>
+        <li>Introduction to BI Tools (e.g., Power BI, Tableau)</li>
+        <li>Creating Reports and Dashboards</li>
+    </ul>
+    <p><b>Module 4: BI Tools and Platforms</b></p>
+    <ul>
+        <li>Overview of BI Tools: Power BI, Tableau, QlikView</li>
+        <li>Introduction to Microsoft Power BI</li>
+        <li>Introduction to Tableau</li>
+    </ul>
+    <p><b>Module 5: Data Integration and ETL Tools</b></p>
+    <ul>
+        <li>Introduction to ETL Tools (e.g., Talend, Informatica)</li>
+        <li>Data Cleaning and Preparation</li>
+        <li>Data Integration from Multiple Sources</li>
+        <li>Automating ETL Workflows</li>
+    </ul>
+    <p><b>Module 6: Data Modeling for BI</b></p>
+    <ul>
+        <li>Basics of Data Modeling</li>
+        <li>Fact and Dimension Tables</li>
+        <li>Designing Star and Snowflake Schemas</li>
+        <li>Data Modeling in Power BI</li>
+    </ul>
+    <p><b>Module 7: Advanced BI Concepts</b></p>
+    <ul>
+        <li>Data Blending and Joins</li>
+        <li>Calculated Fields and Measures</li>
+        <li>Row-Level Security in BI Tools</li>
+        <li>Custom Visualizations and Advanced Formatting</li>
+    </ul>
+    <p><b>Module 8: Predictive Analytics in BI</b></p>
+    <ul>
+        <li>Overview of Predictive Analytics</li>
+        <li>Incorporating Machine Learning Models in BI Tools</li>
+        <li>Time Series Forecasting</li>
+        <li>Sentiment Analysis in BI</li>
+    </ul>
+    <p><b>Module 9: Real-Time BI and Big Data Integration</b></p>
+    <ul>
+        <li>Real-Time BI and Streaming Analytics</li>
+        <li>Integration with Big Data Technologies (e.g., Hadoop, Spark)</li>
+        <li>Working with Cloud BI Platforms (e.g., AWS QuickSight, Google Data Studio)</li>
+        <li>Handling Large Datasets in BI Tools</li>
+    </ul>
+    <p><b>Module 10: BI Strategy and Governance</b></p>
+    <ul>
+        <li>Developing a BI Strategy for Organizations</li>
+        <li>BI Governance and Compliance</li>
+        <li>Data Privacy and Security in BI</li>
+        <li>Monitoring and Evaluating BI Performance</li>
+    </ul>
+    <p><b>Module 11: Emerging Trends in BI</b></p>
+    <ul>
+        <li>Self-Service BI</li>
+        <li>AI-Driven BI and Natural Language Processing</li>
+        <li>Mobile BI Solutions</li>
+        <li>Embedded BI in Applications</li>
+    </ul>
+    <p><b>Module 12: Capstone Project and Review</b></p>
+    <ul>
+        <li>Developing an End-to-End BI Solution</li>
+        <li>Feedback and Best Practices</li>
+    </ul>
+    """)
+
+@app.route('/courses/fintech')
+def fintech_course():
+    return html_template.format(title="Fintech", bg_color="#F4CCCC", content="""
+    <p><b>Module 1: Introduction to Fintech</b></p>
+    <ul>
+        <li>Overview of Fintech and Its Importance</li>
+        <li>Evolution of Financial Technology</li>
+        <li>Key Areas of Fintech: Payments, Lending, Wealth Management, and Insurtech</li>
+        <li>Fintech Ecosystem and Stakeholders</li>
+    </ul>
+    <p><b>Module 2: Financial Systems and Banking</b></p>
+    <ul>
+        <li>Traditional vs. Modern Financial Systems</li>
+        <li>Banking Operations and Services</li>
+        <li>Payment Systems and Infrastructure (SWIFT, ACH, and RTGS)</li>
+        <li>Core Banking Systems and APIs</li>
+    </ul>
+    <p><b>Module 3: Blockchain and Cryptocurrencies</b></p>
+    <ul>
+        <li>Basics of Blockchain Technology</li>
+        <li>Cryptocurrency Fundamentals: Bitcoin, Ethereum, and Others</li>
+        <li>Decentralized Finance (DeFi) Overview</li>
+        <li>Smart Contracts and Their Applications</li>
+    </ul>
+    <p><b>Module 4: Payment Technologies</b></p>
+    <ul>
+        <li>Evolution of Digital Payments</li>
+        <li>Payment Gateways and Processors</li>
+        <li>Mobile Payments and Wallets (e.g., Apple Pay, Google Pay)</li>
+        <li>Cross-Border Payments and Challenges</li>
+    </ul>
+    <p><b>Module 5: Data Analytics in Fintech</b></p>
+    <ul>
+        <li>Role of Data Analytics in Financial Services</li>
+        <li>Predictive Analytics in Credit Scoring and Risk Assessment</li>
+        <li>Fraud Detection using Data Analytics</li>
+        <li>Customer Segmentation and Personalization</li>
+    </ul>
+    <p><b>Module 6: Artificial Intelligence and Machine Learning in Fintech</b></p>
+    <ul>
+        <li>Applications of AI/ML in Financial Services</li>
+        <li>Chatbots for Customer Service in Fintech</li>
+        <li>Algorithmic Trading and Robo-Advisors</li>
+        <li>Credit Risk Modeling using ML</li>
+    </ul>
+    <p><b>Module 7: RegTech and Compliance</b></p>
+    <ul>
+        <li>Overview of Regulatory Technology (RegTech)</li>
+        <li>Anti-Money Laundering (AML) and Know Your Customer (KYC) Processes</li>
+        <li>Data Privacy Laws and Compliance (GDPR, CCPA)</li>
+        <li>Role of Technology in Risk and Compliance Management</li>
+    </ul>
+    <p><b>Module 8: Peer-to-Peer (P2P) and Crowdfunding Platforms</b></p>
+    <ul>
+        <li>P2P Lending Platforms: Overview and Operations</li>
+        <li>Crowdfunding Models: Reward-Based, Equity-Based, and Donation-Based</li>
+        <li>Challenges and Regulatory Frameworks for P2P and Crowdfunding</li>
+    </ul>
+    <p><b>Module 9: Insurtech and WealthTech</b></p>
+    <ul>
+        <li>Introduction to Insurtech: Innovations in Insurance Technology</li>
+        <li>Applications of AI/ML in Insurance: Claims Processing and Risk Assessment</li>
+        <li>Overview of WealthTech: Robo-Advisors and Portfolio Management</li>
+        <li>Trends in Wealth Management Technology</li>
+    </ul>
+    <p><b>Module 10: Cybersecurity in Fintech</b></p>
+    <ul>
+        <li>Importance of Cybersecurity in Financial Services</li>
+        <li>Common Cyber Threats: Phishing, Ransomware, and Fraud</li>
+        <li>Encryption and Secure Transaction Protocols</li>
+        <li>Risk Mitigation Strategies for Fintech Platforms</li>
+    </ul>
+    <p><b>Module 11: Open Banking and APIs</b></p>
+    <ul>
+        <li>Introduction to Open Banking</li>
+        <li>Role of APIs in Fintech Integration</li>
+        <li>Case Studies: Successful Open Banking Implementations</li>
+        <li>Challenges and Risks of Open Banking</li>
+    </ul>
+    <p><b>Module 12: Fintech Startups and Innovation</b></p>
+    <ul>
+        <li>Building a Fintech Startup: Challenges and Opportunities</li>
+        <li>Trends in Fintech Innovation: BNPL (Buy Now, Pay Later), Embedded Finance</li>
+        <li>Case Studies: Successful Fintech Companies</li>
+        <li>Importance of UX/UI in Fintech Applications</li>
+    </ul>
+    <p><b>Module 13: Emerging Technologies in Fintech</b></p>
+    <ul>
+        <li>Quantum Computing in Finance</li>
+        <li>Role of IoT in Financial Services</li>
+        <li>Edge Computing for Real-Time Financial Decisions</li>
+        <li>Future of Biometric Payments</li>
+    </ul>
+    <p><b>Module 14: Capstone Project and Review</b></p>
+    <ul>
+        <li>Designing and Implementing a Fintech Solution</li>
+        <li>Project Presentation and Feedback</li>
+    </ul>
+    """)
+
+@app.route('/courses/blockchain')
+def blockchain_course():
+    return html_template.format(title="Blockchain", bg_color="#D9EAD3", content="""
+    <p><b>Module 1: Introduction to Blockchain</b></p>
+    <ul>
+        <li>Basics of Blockchain Technology</li>
+        <li>Key Concepts: Distributed Ledger, Consensus, and Decentralization</li>
+        <li>History and Evolution of Blockchain</li>
+        <li>Types of Blockchain: Public, Private, and Consortium</li>
+    </ul>
+    <p><b>Module 2: Blockchain Architecture and Components</b></p>
+    <ul>
+        <li>Structure of a Blockchain: Blocks, Transactions, and Chains</li>
+        <li>Cryptographic Hashing and Its Role in Blockchain</li>
+        <li>Merkle Trees and Data Integrity</li>
+        <li>Peer-to-Peer Networks and Nodes</li>
+    </ul>
+    <p><b>Module 3: Consensus Mechanisms</b></p>
+    <ul>
+        <li>Introduction to Consensus Mechanisms</li>
+        <li>Proof of Work (PoW)</li>
+        <li>Proof of Stake (PoS) and Variants</li>
+        <li>Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT)</li>
+    </ul>
+    <p><b>Module 4: Bitcoin and Cryptocurrency Fundamentals</b></p>
+    <ul>
+        <li>Overview of Bitcoin and Its Ecosystem</li>
+        <li>Mining: How Bitcoin Transactions Are Validated</li>
+        <li>Bitcoin Wallets and Keys</li>
+        <li>Security Features in Bitcoin</li>
+    </ul>
+    <p><b>Module 5: Ethereum and Smart Contracts</b></p>
+    <ul>
+        <li>Introduction to Ethereum and Its Differences from Bitcoin</li>
+        <li>Smart Contracts: Definition, Use Cases, and Limitations</li>
+        <li>Ethereum Virtual Machine (EVM)</li>
+        <li>ERC Standards: ERC-20, ERC-721, and ERC-1155</li>
+    </ul>
+    <p><b>Module 6: Decentralized Applications (DApps)</b></p>
+    <ul>
+        <li>What Are DApps and Their Benefits?</li>
+        <li>Tools and Frameworks for DApp Development (e.g., Truffle, Hardhat)</li>
+        <li>Building a Simple DApp</li>
+        <li>Challenges in DApp Adoption</li>
+    </ul>
+    <p><b>Module 7: Blockchain Development</b></p>
+    <ul>
+        <li>Introduction to Solidity Programming</li>
+        <li>Writing and Deploying Smart Contracts</li>
+        <li>Debugging and Testing Smart Contracts</li>
+        <li>Gas Fees and Optimization Techniques</li>
+    </ul>
+    <p><b>Module 8: Blockchain Security</b></p>
+    <ul>
+        <li>Common Vulnerabilities in Smart Contracts</li>
+        <li>Tools for Auditing Smart Contracts (e.g., MythX, Slither)</li>
+        <li>Cryptographic Principles: Digital Signatures, PKI, and Encryption</li>
+        <li>Security Best Practices in Blockchain Development</li>
+    </ul>
+    <p><b>Module 9: Blockchain Platforms and Frameworks</b></p>
+    <ul>
+        <li>Overview of Popular Platforms: Hyperledger, Corda, and Polkadot</li>
+        <li>Comparison of Blockchain Platforms</li>
+        <li>Setting Up a Private Blockchain Using Hyperledger Fabric</li>
+        <li>Introduction to Layer 2 Solutions and Sidechains</li>
+    </ul>
+    <p><b>Module 10: Decentralized Finance (DeFi)</b></p>
+    <ul>
+        <li>What Is DeFi and Why It Matters?</li>
+        <li>Key DeFi Use Cases: Lending, Borrowing, and Staking</li>
+        <li>Role of Stablecoins in DeFi</li>
+        <li>Risks and Challenges in DeFi Applications</li>
+    </ul>
+    <p><b>Module 11: Blockchain in Enterprises</b></p>
+    <ul>
+        <li>Use Cases of Blockchain in Supply Chain, Healthcare, and Finance</li>
+        <li>Tokenization of Assets</li>
+        <li>Blockchain as a Service (BaaS) Providers</li>
+        <li>Integration of Blockchain with IoT and AI</li>
+    </ul>
+    <p><b>Module 12: Non-Fungible Tokens (NFTs)</b></p>
+    <ul>
+        <li>Introduction to NFTs and Their Characteristics</li>
+        <li>Creating and Minting NFTs</li>
+        <li>NFT Marketplaces (e.g., OpenSea, Rarible)</li>
+        <li>Applications of NFTs Beyond Art and Collectibles</li>
+    </ul>
+    <p><b>Module 13: Emerging Trends in Blockchain</b></p>
+    <ul>
+        <li>Introduction to Web3 and the Metaverse</li>
+        <li>Cross-Chain Interoperability and Bridges</li>
+        <li>Blockchain Scalability Solutions (Sharding, Rollups)</li>
+        <li>Quantum Computing and Its Impact on Blockchain</li>
+    </ul>
+    <p><b>Module 14: Capstone Project and Review</b></p>
+    <ul>
+        <li>Developing a Blockchain-Based Solution</li>
+        <li>Project Presentation and Feedback</li>
+    </ul>
+    ")
+
+@app.route('/courses/c-programming')
+def c_programming_course():
+    return html_template.format(title="C Programming", bg_color="#D9EAD3", content="""
+    <p><b>Module 1: Introduction to C Programming</b></p>
+    <ul>
+        <li>History and Evolution of C</li>
+        <li>Basic Structure of a C Program</li>
+        <li>Compiling and Running a C Program</li>
+        <li>Understanding Header Files and Libraries</li>
+    </ul>
+    <p><b>Module 2: Data Types and Operators</b></p>
+    <ul>
+        <li>Variables and Constants</li>
+        <li>Primitive Data Types (int, float, char, etc.)</li>
+        <li>Operators: Arithmetic, Relational, Logical, Bitwise</li>
+        <li>Type Conversion and Type Casting</li>
+    </ul>
+    <p><b>Module 3: Control Flow Statements</b></p>
+    <ul>
+        <li>Conditional Statements (if, if-else, switch)</li>
+        <li>Looping Statements (for, while, do-while)</li>
+        <li>Jump Statements (break, continue, goto)</li>
+    </ul>
+    <p><b>Module 4: Functions in C</b></p>
+    <ul>
+        <li>Defining and Calling Functions</li>
+        <li>Function Parameters and Return Types</li>
+        <li>Recursion in C</li>
+        <li>Storage Classes (auto, static, extern, register)</li>
+    </ul>
+    <p><b>Module 5: Arrays and Strings</b></p>
+    <ul>
+        <li>One-Dimensional and Multi-Dimensional Arrays</li>
+        <li>String Handling Functions</li>
+        <li>Pointers and Strings</li>
+        <li>Passing Arrays to Functions</li>
+    </ul>
+    <p><b>Module 6: Pointers in C</b></p>
+    <ul>
+        <li>Introduction to Pointers</li>
+        <li>Pointer Arithmetic</li>
+        <li>Pointers and Arrays</li>
+        <li>Dynamic Memory Allocation (malloc, calloc, free)</li>
+    </ul>
+    <p><b>Module 7: Structures and Unions</b></p>
+    <ul>
+        <li>Defining and Using Structures</li>
+        <li>Array of Structures</li>
+        <li>Nested Structures</li>
+        <li>Difference Between Structures and Unions</li>
+    </ul>
+    <p><b>Module 8: File Handling in C</b></p>
+    <ul>
+        <li>File Operations: Read and Write</li>
+        <li>Working with Text and Binary Files</li>
+        <li>File Pointers and Functions (fopen, fclose, fread, fwrite)</li>
+        <li>Command Line Arguments</li>
+    </ul>
+    <p><b>Module 9: Advanced Topics in C</b></p>
+    <ul>
+        <li>Bitwise Operations and Their Applications</li>
+        <li>Preprocessors and Macros</li>
+        <li>Linked Lists: Singly, Doubly, Circular</li>
+        <li>Memory Management Techniques</li>
+    </ul>
+    <p><b>Module 10: Capstone Project</b></p>
+    <ul>
+        <li>Developing a C-Based Application</li>
+        <li>Project Presentation and Code Review</li>
+    </ul>
+    ")
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
