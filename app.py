@@ -176,7 +176,84 @@ def python_course():
     </ul>
     
     """)
-  
+
+@app.route('/courses/ai')
+def ai_course():
+    return html_template.format(title="Artificial Intelligence", bg_color="#C6E0B4", content="""
+    <p><b>Module 1: Introduction to Artificial Intelligence</b></p>
+    <ul>
+        <li>What is AI? Definition and Applications</li>
+        <li>History of AI: Key Milestones</li>
+        <li>Types of AI: Narrow AI, General AI, Superintelligent AI</li>
+        <li>AI Subfields: Machine Learning, Deep Learning, NLP, Computer Vision</li>
+        <li>Tools for AI Development</li>
+        <li>Ethical Considerations in AI</li>
+    </ul>
+    <p><b>Module 2: Python for AI</b></p>
+    <ul>
+        <li>Python Refresher</li>
+        <li>Libraries for AI: numpy, pandas, matplotlib, scikit-learn</li>
+        <li>Data Manipulation and Preprocessing</li>
+    </ul>
+    <p><b>Module 3: Machine Learning Fundamentals</b></p>
+    <ul>
+        <li>Introduction to Machine Learning</li>
+        <li>Supervised Learning Algorithms: Linear Regression, Logistic Regression</li>
+        <li>Unsupervised Learning Algorithms: Clustering, PCA</li>
+        <li>Model Evaluation: Accuracy, Precision, Recall, F1-Score</li>
+        <li>Overfitting and Underfitting</li>
+    </ul>
+    <p><b>Module 4: Deep Learning Fundamentals</b></p>
+    <ul>
+        <li>Introduction to Neural Networks</li>
+        <li>Deep Learning Frameworks: TensorFlow and PyTorch</li>
+        <li>Training Neural Networks: Forward Propagation, Backpropagation</li>
+        <li>Convolutional Neural Networks (CNNs)</li>
+        <li>Recurrent Neural Networks (RNNs)</li>
+    </ul>
+    <p><b>Module 5: Natural Language Processing (NLP)</b></p>
+    <ul>
+        <li>Basics of NLP: Tokenization, Lemmatization, Stemming</li>
+        <li>Text Preprocessing: Stopword Removal, Bag of Words, TF-IDF</li>
+        <li>Sentiment Analysis</li>
+        <li>Introduction to Transformers: BERT, GPT</li>
+    </ul>
+    <p><b>Module 6: Computer Vision</b></p>
+    <ul>
+        <li>Basics of Image Processing</li>
+        <li>Convolutional Neural Networks (CNNs) for Vision</li>
+        <li>Pretrained Models: VGG, ResNet</li>
+        <li>Object Detection and Segmentation</li>
+    </ul>
+    <p><b>Module 7: Reinforcement Learning</b></p>
+    <ul>
+        <li>Basics of Reinforcement Learning</li>
+        <li>Markov Decision Processes (MDPs)</li>
+        <li>Q-Learning</li>
+        <li>Deep Q-Networks</li>
+    </ul>
+    <p><b>Module 8: AI Ethics and Explainability</b></p>
+    <ul>
+        <li>AI Ethics: Bias, Fairness, Accountability</li>
+        <li>Explainable AI (XAI): SHAP, LIME</li>
+        <li>Regulations and Guidelines for AI</li>
+    </ul>
+    <p><b>Module 9: Advanced AI Topics</b></p>
+    <ul>
+        <li>Generative AI: GANs, VAEs</li>
+        <li>AI in Edge Computing</li>
+        <li>AI in Real-Time Systems</li>
+    </ul>
+    <p><b>Module 10: Capstone Project and Revision</b></p>
+    <ul>
+        <li>Capstone Project: End-to-End AI Application</li>
+        <li>Revision and Q&A</li>
+        <li>Final Assessment</li>
+    </ul>
+    
+    """)
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
